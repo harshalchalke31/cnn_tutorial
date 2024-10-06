@@ -1,0 +1,36 @@
+B/W 2x2px image is a 2D array containing elements between 0-255 which is 8 bits of info 2^8 is 256, 0 -black, 1 - white
+Colored 2x2px image is a 3D array containing 3 channels RGB. 
+
+Feature Detector/ Kernel / Filter Size: typically 3x3, alexnet uses 7x7 and can also be 5x5
+
+Convolution operation = Input image X Kernel = Feature map
+Step size of Kernel = stride (conventionally works at 2)
+Feature map size inversely proportional to stride
+We create multiple feature maps using multiple kernels, to make up for the information loss, so during 
+Different kernels to extract different features: Sharpen, emboss, edge detect, blur, etc.
+gimp.org - resource to explore kernel filters
+
+Convolution operation still preserves the spatial features of the image, how?
+
+Why is a non-linear activation function necessary at the output of convolution operation? - Understanding Convolutional NNs with math model
+By Jay Kuo
+
+Delving deep into rectifiers By Kaiming He, Parametric Relu
+
+CNN should have a property called spatial invariance, meaning it should not matter if features are a bit distorted, our NN should have
+flexibility to still detect features - Max pooling - How does it do that?
+
+It preserves max values from feature map, closest similarity to the feature, we discard 75% of info which might not be useful or not related
+to our feature. Sub sampling - Average pooling
+
+Resource: Evaluation of Pooling Operationsin CNN Arch for obj recognition by Dominik Scherer, simple and easy to read paper
+
+Flattening - After pooling flatten it into a long vector which will act as an input to the ANN
+
+Loss function - Cross entropy
+
+Why cross entropy over MSE?
+Due to log it helps the network error on a granular scale
+
+
+Introduction to CNN by Jiaxin WU - Good resource
