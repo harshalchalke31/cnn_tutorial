@@ -2,6 +2,11 @@
 
 This repository contains several implementations of a classic Convolutional Neural Network (CNN), focusing on foundational concepts and practical applications in Computer Vision (CV). The project explores the basics of CNN architecture and applies it to well-known image datasets to solidify concepts with hands-on experience.
 
+## Model Architecture
+
+## Image
+![Description of Image](./cnn.jpg)
+
 ## Files in This Repository
 
 1. **`cnn.py`**: Contains the `ClassicCNN` class, a basic implementation of a CNN, designed to be modular and easy to understand.
@@ -52,7 +57,10 @@ Each dataset requires specific preprocessing steps:
    pip install -r requirements.txt
 
 3. Download necessary datasets from Kaggle
-
+- [MNIST Data](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
+- [CIFAR10 Data](https://www.kaggle.com/datasets/gazu468/cifar10-classification-image)
+- [Cats Vs Dogs Data](https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset)
+  
 4. Run the tutorial notebook for MNIST and CIFAR-10:
    ```bash
    jupyter notebook cnn_tutorial.ipynb
